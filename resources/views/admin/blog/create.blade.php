@@ -22,12 +22,12 @@
 
  <section class="content-header">
       <h1>
-        Propeties Uploading
+        Blog Uploading
         {{-- <small>preview of simple tables</small> --}}
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Propeties</a></li>
+        <li><a href="#">Blog</a></li>
         <li class="active">Create</li>
       </ol>
     </section>

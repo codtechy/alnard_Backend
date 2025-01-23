@@ -32,7 +32,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::post('/userenquiry', 'enquiryController@store');
 // Route::get('/projects', 'userController@projects')->name('');
 // Route::get('/userblog', 'userController@userblog')->name('userblog');
-// Route::get('/singleblog/{id}', 'userController@singleblog')->name('singleblog');
+Route::get('/singleblog/{id}', 'userController@singleblog');
 // Route::get('/userservices', 'userController@userservices')->name('');
 Route::get('/contact', 'userController@usercontact')->name('usercontact');
 Route::get('/user-products', 'userController@userproducts')->name('userproducts');
@@ -111,6 +111,6 @@ Route::post('enquirystore', 'enquiryController@store');
 
 
 
-Route::resource('category', 'categoryController');
-Route::resource('video', 'videoController');
-Route::resource('products', ProductController::class);
+// Route::resource('category', 'categoryController');
+// Route::resource('video', 'videoController');
+// Route::resource('products', ProductController::class);

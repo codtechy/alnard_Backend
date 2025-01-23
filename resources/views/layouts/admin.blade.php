@@ -79,20 +79,20 @@
         <li class="header"><a href="/home">MAIN DASHBOARD</a></li>
 
 {{-- <li><a href="/video"><i class="fa fa-circle-o"></i> </a></li> --}}
-   <li><a href="/video"><i class="fa fa-edit "></i> <span>Youtube Video</span></a></li>
-         {{-- <li class="treeview">
+   {{-- <li><a href="/video"><i class="fa fa-edit "></i> <span>Youtube Video</span></a></li> --}}
+         <li class="treeview">
             <a href="#">
-              <i class="fa fa-edit"></i> <span>Videos</span>
+              <i class="fa fa-edit"></i> <span>Blogs</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="/banner/create/"><i class="fa fa-circle-o"></i>Add Banner </a></li>
-              <li><a href="/banner"><i class="fa fa-circle-o"></i> Banners</a></li>
+              <li><a href="/blogs/create/"><i class="fa fa-circle-o"></i>Add Blogs </a></li>
+              <li><a href="/blogs"><i class="fa fa-circle-o"></i> Blogs</a></li>
             </ul>
-          </li> --}}
-          
+          </li>
+{{--           
  <li class="treeview">
             <a href="#">
               <i class="fa fa-edit"></i> <span>Banner</span>
@@ -107,10 +107,10 @@
 
 
             </ul>
-          </li>
+          </li> --}}
 
 
-           <li class="treeview">
+           {{-- <li class="treeview">
             <a href="#">
               <i class="fa fa-edit"></i> <span> Manage Products</span>
               <span class="pull-right-container">
@@ -119,14 +119,14 @@
             </a>
             <ul class="treeview-menu">
 
-              {{-- <li><a href="/category/create/"><i class="fa fa-circle-o"></i>Add Category </a></li> --}}
+           
               <li><a href="/category"><i class="fa fa-circle-o"></i> Category</a></li>
               <li><a href="/products"><i class="fa fa-circle-o"></i> Products</a></li>
-              {{-- <li><a href="/products/create/"><i class="fa fa-circle-o"></i> Products</a></li> --}}
+     
 
 
             </ul>
-          </li>
+          </li> --}}
 
 
         <li class="treeview">

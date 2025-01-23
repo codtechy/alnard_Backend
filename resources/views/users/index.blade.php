@@ -1,604 +1,515 @@
 @extends('layouts.user')
 @section('content')
-    <!-- Header End -->
-    <!-- Hero Section Start -->
-    {{-- <div class="hero hero-slider-layout">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <!-- Hero Slide Start -->
-                    <div class="swiper-slide">
-                        <div class="hero-slide">
-                            <!-- Slider Image Start -->
-                            <div class="hero-slider-image">
-                                <img src="/users/images/hero-bg.jpg" alt>
-                            </div>
-                            <!-- Slider Image End -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-7">
-                                        <!-- Hero Content Start -->
-                                        <div class="hero-content">
-                                            <!-- Section Title Start -->
-                                            <div
-                                                class="section-title dark-section">
-                                                <h3 class="wow fadeInUp">welcome
-                                                    our industry</h3>
-                                                <h1 class="text-anime-style-2"
-                                                    data-cursor="-opaque">Excellence
-                                                    innovating
-                                                    <span>industry for
-                                                        today</span>
-                                                </h1>
-                                                <p class="wow fadeInUp"
-                                                    data-wow-delay="0.25s">At
-                                                    the heart of our operations
-                                                    is a commitment to
-                                                    delivering superior products
-                                                    through cutting-edge
-                                                    technology and innovative
-                                                    processes.</p>
-                                            </div>
-                                            <!-- Section Title End -->
-                                            <!-- Hero Button Start -->
-                                            <div class="hero-btn wow fadeInUp"
-                                                data-wow-delay="0.4s">
-                                                <a href="contact.html"
-                                                    class="btn-default">
-                                                    <span>explore more</span>
-                                                </a>
-                                            </div>
-                                            <!-- Hero Button End -->
-                                        </div>
-                                        <!-- Hero Content End -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hero Slide End -->
-
-                    <!-- Hero Slide Start -->
-                    <div class="swiper-slide">
-                        <div class="hero-slide">
-                            <!-- Slider Image Start -->
-                            <div class="hero-slider-image">
-                                <img src="/users/images/hero-bg-2.jpg" alt>
-                            </div>
-                            <!-- Slider Image End -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-7">
-                                        <!-- Hero Content Start -->
-                                        <div class="hero-content">
-                                            <!-- Section Title Start -->
-                                            <div
-                                                class="section-title dark-section">
-                                                <h3 class="wow fadeInUp">welcome
-                                                    our industry</h3>
-                                                <h1 class="text-anime-style-2"
-                                                    data-cursor="-opaque">Excellence
-                                                    innovating
-                                                    <span>industry for
-                                                        today</span>
-                                                </h1>
-                                                <p class="wow fadeInUp"
-                                                    data-wow-delay="0.25s">At
-                                                    the heart of our operations
-                                                    is a commitment to
-                                                    delivering superior products
-                                                    through cutting-edge
-                                                    technology and innovative
-                                                    processes.</p>
-                                            </div>
-                                            <!-- Section Title End -->
-                                            <!-- Hero Button Start -->
-                                            <div class="hero-btn wow fadeInUp"
-                                                data-wow-delay="0.4s">
-                                                <a href="contact.html"
-                                                    class="btn-default">
-                                                    <span>explore more</span>
-                                                </a>
-                                            </div>
-                                            <!-- Hero Button End -->
-                                        </div>
-                                        <!-- Hero Content End -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hero Slide End -->
-                </div>
-                <div class="hero-pagination"></div>
-            </div>
-        </div> --}}
-
-
-    <link rel="stylesheet" type="text/css" href="users/engine1/style.css" />
-    <script type="text/javascript" src="users/engine1/jquery.js"></script>
-
-    <!-- Start WOWSlider.com BODY section -->
-    <div id="wowslider-container1">
-        <div class="ws_images">
-            <ul>
-
-                @foreach ($banners as $item)
-                    <li><a href="http://wowslider.net"><img src="/uploads/banner/{{ $item->image }}" alt="html5 slider"
-                                title="hero-bg-2" id="wows1_0" /></a></li>
-                @endforeach
-
-
-
-            </ul>
-        </div>
-        {{-- <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel
-                example</a> by WOWSlider.com v9.0</div>
-        <div class="ws_shadow"></div> --}}
-    </div>
-    <script type="text/javascript" src="users/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="users/engine1/script.js"></script>
-    <!-- End WOWSlider.com BODY section -->
-
-
-    <!-- Hero Section End -->
-    <!-- About Us Start -->
-    <div class="about-us">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- About Us Image Start -->
-                    <div class="about-image">
-                        <!-- About Image Start -->
-                        <div class="about-img-1">
-                            <figure class="image-anime reveal">
-                                <img src="/users/images/about-img-1.jpg" alt>
-                            </figure>
-                        </div>
-                        <!-- About Image End -->
-                        <!-- About Image Start -->
-                        <div class="about-img-2">
-                            <figure class="image-anime reveal">
-                                <img src="/users/images/about-img-2.jpg" alt>
-                            </figure>
-                        </div>
-                        <!-- About Image End -->
-                        <!-- Company Experience Start -->
-                        <div class="company-experience">
-                            <div class="company-experience-counter">
-                                <h2>
-                                    <span class="counter">14</span>+
-                                </h2>
-                            </div>
-                            <div class="company-experience-content">
-                                <p>years of experience </p>
-                              
-                                
-                            </div>
-                        </div>
-                        <!-- Company Experience End -->
-                    </div>
-                    <!-- About Us Image End -->
-                </div>
-                <div class="col-lg-6">
-                    <!-- About Content Start -->
-                    <div class="about-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">about us</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque"> welcome to
-                                <span>Maximo Group</span>
-                            </h2>
-                            <p style="font-size: 25px" >Exporting material to all over india</p>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">At Maximo Group, we
-                                specialize in delivering premium-quality
-                                aluminum products, door locks, and hardware
-                                solutions. Our commitment to innovation and
-                                excellence ensures we provide reliable and
-                                durable products tailored to meet diverse
-                                customer needs. With a focus on quality
-                                craftsmanship and modern designs, Maximo
-                                Group stands as a trusted partner for both
-                                residential and commercial projects. Let us
-                                secure and enhance your spaces with products
-                                designed to last.</p>
-                        </div>
-                        <!-- Section Title End -->
-                        <div class="about-content-body">
-                            <div class="row align-items-center">
-                                <div class="col-md-6">
-                                    <!-- About List Btn Box Start -->
-                                    <div class="about-list-btn">
-                                        <!-- About Content List Start -->
-                                        <div class="about-content-list wow fadeInUp" data-wow-delay="0.5s">
-                                            <ul>
-                                                <li>Premium Quality Products: Maximo Group excels in offering top-tier
-                                                    aluminum products, door locks, and hardware designed for durability and
-                                                    performance.</li>
-                                                <!-- <li>advanced automation</li> -->
-                                                <li>Innovative Designs: Combining modern aesthetics with functionality, our
-                                                    products are crafted to elevate both residential and commercial spaces.
-                                                </li>
-                                                <li>Trusted Reliability: With a focus on quality and customer satisfaction,
-                                                    Maximo Group is your dependable partner for secure and lasting
-                                                    solutions.</li>
-                                            </ul>
-                                        </div>
-                                        <!-- About Content List End -->
-                                        <!-- About Content Btn Start -->
-                                        <div class="about-content-btn wow fadeInUp" data-wow-delay="0.75s">
-                                            <a href="/about" class="btn-default">
-                                                <span>learn more</span>
-                                            </a>
-                                        </div>
-                                        <!-- About Content Btn End -->
-                                    </div>
-                                    <!-- About List Btn Box End -->
-                                </div>
-                                <div class="col-md-6">
-                                    <!-- About Content Counter Start -->
-                                    <div style="height: 280px" class="genuine-rating-counter">
-                                        <!-- About Counter Item Start -->
-                                        <div class="about-counter-item">
-                                            <div class="about-counter">
-                                                <h2>
-                                                    <span class="counter">4.9</span>
-                                                </h2>
-                                            </div>
-                                            <div class="genuine-rating">
-                                                <ul>
-                                                    <li>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="genuine-rating-counter-content">
-                                                <p>15.5K genuine rating</p>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- About Counter Item End -->
-                                    </div>
-                                    <!-- About Content Counter End -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- About Content End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Us End -->
-
-    <!-- Our Service List Start -->
-    <div class="our-services-list">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Services List Box Start -->
-                    <div class="services-list-box">
-                        <!-- Service Item Start -->
-                        <div class="service-item">
-                            <div class="icon-box">
-                                <img src="/users/images/icon-service-1.svg" alt>
-                            </div>
-                            <div class="service-body">
-                                <h3>High-Quality Aluminum Products</h3>
-                            </div>
-
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item">
-                            <div class="icon-box">
-                                <img src="/users/images/icon-service-2.svg" alt>
-                            </div>
-                            <div class="service-body">
-                                <h3>Premium Door Locks</h3>
-                            </div>
-
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item">
-                            <div class="icon-box">
-                                <img src="/users/images/icon-service-3.svg" alt>
-                            </div>
-                            <div class="service-body">
-                                <h3>Comprehensive Hardware Solutions</h3>
-                            </div>
-
-                        </div>
-                        <!-- Service Item End -->
-                        <!-- Service Item Start -->
-                        <div class="service-item">
-                            <div class="icon-box">
-                                <img src="/users/images/icon-service-4.svg" alt>
-                            </div>
-                            <div class="service-body">
-                                <h3>Innovative and Modern Designs</h3>
-                            </div>
-
-                        </div>
-                        <!-- Service Item End -->
-                    </div>
-                    <!-- Services List Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Service List End -->
-    <!-- Our Story Start -->
-    <div class="our-story">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our story</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Transforming industries
-                            <span>with innovative efficient solutions</span>
-                        </h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-                <div class="col-lg-6">
-                    <!-- Our Story Header Image Start -->
-                    <div class="our-story-header-img">
-                        <figure class="reveal image-anime">
-                            <img src="/users/images/our-story-header-img-1.jpg" alt>
-                        </figure>
-                        <figure class="reveal image-anime">
-                            <img src="/users/images/our-story-header-img-2.jpg" alt>
-                        </figure>
-                    </div>
-                    <!-- Our Story Header Image End -->
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Our Story Image Start -->
-                    <div class="our-story-img">
-                        <figure class="reveal image-anime">
-                            <img src="/users/images/our-story-img.jpg" alt>
-                        </figure>
-                    </div>
-                    <!-- Our Story Image End -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="our-story-content">
-                        <div class="our-story-content-body">
-                            <p>At Maximo Group, our journey is rooted in the vision of delivering excellence in aluminum
-                                products, door locks, and hardware. From humble beginnings, we have grown into a trusted
-                                name, driven by a commitment to quality, innovation, and customer satisfaction.
-
-                                Our story is one of relentless pursuit to redefine industry standards, offering products
-                                that combine durability, design, and functionality. Each product we deliver reflects our
-                                dedication to craftsmanship and a passion for creating solutions that empower homes and
-                                businesses alike.
-
-                                As we continue to grow, our mission remains clear: to be a leader in providing reliable,
-                                modern, and secure hardware solutions. At Maximo Group, we don't just build products; we
-                                build trust, one customer at a time.</p>
-                        </div>
-                        <div class="our-story-counters">
-                            <!-- Our Story Counter Start -->
-                            <div class="our-story-counter">
-                                <h3>
-                                    <span class="counter">10</span>k+
-                                </h3>
-                                <p>completed project</p>
-                            </div>
-                            <!-- Our Story Counter End -->
-                            <!-- Our Story Counter Start -->
-                            <div class="our-story-counter">
-                                <h3>
-                                    <span class="counter">15</span>+
-                                </h3>
-                                <p>satisfied customer</p>
-                            </div>
-                            <!-- Our Story Counter End -->
-                            <!-- Our Story Counter Start -->
-                            <div class="our-story-counter">
-                                <h3>
-                                    <span class="counter">14</span>k+
-                                </h3>
-                                <p>years of mastery</p>
-                            </div>
-                            <!-- Our Story Counter End -->
-                        </div>
-                        <!-- Our Story Intro Video Start -->
-                        <div class="our-story-intro-video">
-                            <!-- Our Story Client Image Start -->
-
-                            <!-- Our Story Client Image End -->
-                            <!-- Intro Video Box Start -->
-                            <div class="intro-video-box">
-                                <!-- Video Play Button Start -->
-                                <div class="video-play-button">
-                                    <a href="{{$videos['0']->video}}" class="popup-video"
-                                        data-cursor-text="Play">
-                                        <i class="fa-solid fa-play"></i>
-                                    </a>
-                                    <p>Watch Our Video</p>
-                                </div>
-                                <!-- Video Play Button End -->
-                            </div>
-                            <!-- Intro Video Box End -->
-                        </div>
-                        <!-- Our Story Intro Video End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Story End -->
-
-
-    <!-- Our Team Section Start -->
-    <div class="our-team">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our products</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque"> <span>From our Best
-                                Products</span></h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Section Button Start -->
-                    <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-                        <a href="user-products" class="btn-default"><span>Explore
-                                More</span></a>
-                    </div>
-                    <!-- Section Button End -->
-                </div>
-            </div>
-
-            <div class="row">
-                @foreach ($products as $item)
-                    <div class="col-lg-3 col-md-6">
-                    <!-- Team Member Item Start -->
-                    <div class="team-member-item wow fadeInUp">
-                        <!-- Team Image Start -->
-                        <div class="team-image">
-                            <a href="#" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="/uploads/product/{{$item->image}}" alt>
-                                </figure>
+   
+        <!-- Start Banner Two Area -->
+        <div class="banner-two-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="single-banner-two-content" data-cue="slideInLeft" data-duration="1000">
+                            <!-- <span>Since </span> -->
+                            <h1>MAINTANANCE MASTERY</h1>
+                            <span>Established in 1999</span>
+                            <p style="color:white;">
+                                Welcome to AL NARD TECHNICAL SERVICES your
+                                trusted partner in maintenance services in
+                                Dubai. With a relentless commitment to quality
+                                and trust, we have established ourselves as a
+                                leading provider of reliable and efficient
+                                maintenance solutions.
+                            </p>
+                            <a href="/contact" class="default-btn btn-style-three">
+                                Contact us
                             </a>
-
                         </div>
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
-                        <div class="team-content">
-                            <h3><a href="">{{$item->title}}</a></h3>
-
-                        </div>
-                        <!-- Team Content End -->
                     </div>
-                    <!-- Team Member Item End -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="banner-two-img" data-cue="slideInRight" data-duration="1000"></div>
+                    </div>
                 </div>
-                @endforeach
-                
-
-               
             </div>
         </div>
-    </div>
-    <!-- Our Team Section End -->
-
-    <!-- Our Testimonial Section Start -->
-    <div class="our-testimonial">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-                    <!-- Our Testimonial Content Start -->
-                    <div class="our-testimonial-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Our client say</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">What our satisfied
-                                clients
-                                <span>are saying</span>
+        <!-- End Banner Two Area -->
+        <!-- Start Our Services Two area -->
+        <div id="services" class="services-two-area pt-100 pb-100">
+            <div class="container">
+                <div class="section-title">
+                    <span class="top-title top-title-two">
+                        Our
+                                Services
+                    </span>
+                    <h2>Professional Services</h2>
+                </div>
+                <div class="services-two-slider owl-carousel owl-theme">
+                    <div class="services-two-content-card">
+                        <div class="services-two-img">
+                            <a href="#">
+                                <img src="/users/assets/images/services/services-img-1.jpg" alt="images">
+                            </a>
+                        </div>
+                        <div style="height: 250px;" class="services-two-content">
+                            <a href="#">
+                                <h3 style="color: #000;">
+                                    WATER
+                                            PROOFING
+                                </h3>
+                            </a>
+                            <p>
+                                Specialised waterproofing systems for
+                                        commercial
+                                        and residential applications
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="services-two-content-card">
+                        <div class="services-two-img">
+                            <a href="#">
+                                <img src="/users/assets/images/services/services-img-2.jpg" alt="images">
+                            </a>
+                        </div>
+                        <div style="height: 250px;" class="services-two-content">
+                            <a href="#">
+                                <h3 style="color: #000;">
+                                    RENOVATION &
+                                            REFURBISHMENT
+                                </h3>
+                            </a>
+                            <p>
+                                Have your Villa | Office | Home
+                                        renovation in
+                                        Dubai handled by creative professionals.
+                                        Let's
+                                        arrange a survey of your property to
+                                        align
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-two-content-card">
+                        <div class="services-two-img">
+                            <a href="#">
+                                <img src="/users/assets/images/services/services-img-3.jpg" alt="images">
+                            </a>
+                        </div>
+                        <div style="height: 250px;" class="services-two-content">
+                            <a href="#">
+                                <h3 style="color: #000;">
+                                    INTERIOR FITOUTS
+                                </h3>
+                            </a>
+                            <p>
+                                Interior design is making the best
+                                        possible
+                                        use of the available space
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-two-content-card">
+                        <div class="services-two-img">
+                            <a href="#">
+                                <img src="/users/assets/images/services/painting.jpg" alt="images">
+                            </a>
+                        </div>
+                        <div style="height: 250px;" class="services-two-content">
+                            <a href="#">
+                                <h3 style="color: #000;">
+                                    PAINTING
+                                </h3>
+                            </a>
+                            <p>
+                                Painting to heal wounds of your walls
+                                        and
+                                        living places with colours,to make it
+                                        unique
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-two-content-card">
+                        <div class="services-two-img">
+                            <a href="#">
+                                <img src="/users/assets/images/services/carpentry.jpg" alt="images">
+                            </a>
+                        </div>
+                        <div style="height: 250px;" class="services-two-content">
+                            <a href="#">
+                                <h3 style="color: #000;">
+                                    CARPENTRY
+                                </h3>
+                            </a>
+                            <p>
+                                Al nard possess best carpentry
+                                        techniques and
+                                        ideas,for interior and exterior
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-two-content-card">
+                        <div class="services-two-img">
+                            <a href="#">
+                                <img src="/users/assets/images/services/ele.jpg" alt="images">
+                            </a>
+                        </div>
+                        <div style="height: 250px;" class="services-two-content">
+                            <a href="#">
+                                <h3 style="color: #000;">
+                                    ELECTRICAL & PLUMBING
+                                </h3>
+                            </a>
+                            <p>
+                                Painting to We have the best experienced
+                                        electrical and plumbing technicians
+                                        wounds of
+                                        your walls and living places with
+                                        colours,to
+                                        make it unique
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start About Style One Area -->
+        <div class="about-style-one-area pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" data-cue="slideInLeft" data-duration="1500">
+                        <div class="single-about-two-img">
+                            <div class="about-img-two">
+                                <img src="/users/assets/images/about/about-two-img.png" alt="images">
+                            </div>
+                            <!-- <div class="about-two-shape-1">
+                                <img src="/users/assets/images/about/about-two-shape-1.png" alt="images">
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-about-content about-content-two">
+                            <span class="left-title">About Us</span>
+                            <h2>
+                                HI THERE!
                             </h2>
-                        </div>
-                        <!-- Section Title End -->
-                        <!-- Testimonial Slider Start -->
-                        <div class="testimonial-slider">
-                            <div class="swiper">
-                                <div class="swiper-wrapper" data-cursor-text="Drag">
-
-                                @foreach ($says as $item )
-                                 <!-- Testimonial Slide Start -->
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <div class="testimonial-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-content">
-                                                <p>"{{$item->words}}"</p>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <div class="author-image">
-                                                    <figure class="image-anime">
-                                                        <img src="/uploads/clientsays/{{$item->image}}" alt>
-                                                    </figure>
-                                                </div>
-                                                <div class="author-content">
-                                                    <h3>{{$item->name}}</h3>
-                                                    <p>{{$item->designation}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Slide End -->
-                                @endforeach
-
-                                   
-                             
+                            <p style="color:white;">
+                                Welcome to AL NARD TECHNICAL SERVICES
+                                        your
+                                        trusted partner in maintenance services
+                                        in
+                                        Dubai. With a relentless commitment to
+                                        quality
+                                        and trust, we have established ourselves
+                                        as a
+                                        leading provider of reliable and
+                                        efficient
+                                        maintenance solutions. Our team of
+                                        expert
+                                        technicians and professionals are
+                                        dedicated to
+                                        delivering exceptional service, ensuring
+                                        that
+                                        your properties and /users/assets are
+                                        well-maintained,
+                                        safe, and running smoothly.
+                            </p>
+                            <p style="color:white;">
+                                At AL NARD we understand the importance
+                                        of trust
+                                        and reliability in building long-term
+                                        relationships. That's why we strive to
+                                        exceed
+                                        our clients' expectations with every
+                                        project,
+                                        every time. Our comprehensive range of
+                                        maintenance services is designed to
+                                        cater to all
+                                        your needs, from routine maintenance to
+                                        emergency repairs.
+                                        AL NARD
+                            </p>
+                            <div class="single-about-item about-item-two-card" data-cue="slideInUp" data-duration="1000">
+                                <div class="about-icon">
+                                    <i class="flaticon-favorite"></i>
+                                    <!-- <div class="favorite-shape">
+                                        <img
+                                            src="/users/assets/images/about/about-two-shape-3.png"
+                                            alt="images">
+                                    </div> -->
                                 </div>
-                                <div class="testimonial-btn">
-                                    <div class="testimonial-button-prev"></div>
-                                    <div class="testimonial-button-next"></div>
-                                </div>
+                                <h3 style="color:black">
+                                    Professional
+                                            Team
+                                </h3>
+                                <!-- <div class="about-style-two-shape">
+                                    <img
+                                        src="/users/assets/images/about/about-two-shape-4.png"
+                                        alt="images">
+                                </div> -->
                             </div>
-                        </div>
-                        <!-- Testimonial Slider End -->
-                    </div>
-                    <!-- Our Testimonial Content End -->
-                </div>
-                <div class="col-lg-6">
-                   
-                    <div class="our-testimonial-image">
-                        <figure class="image-anime reveal">
-                            <img src="/users/images/testimonial-image.jpg" alt>
-                        </figure>
-                    </div>
-                  
-                </div>
-                <div  class="col-lg-12">
-                    <!-- Agency Support Slider Start -->
-                    <div  class="testimonial-company-slider">
-                        <div  class="swiper">
-                            <div class="swiper-wrapper">
-                               
-                                
-                                @foreach ($teams as $item)
-                                    <!-- Agency Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="/uploads/team/{{$item->image}}" alt>
-                                    </div>
+                            <div class="single-about-item about-item-two-card" data-cue="slideInUp" data-duration="2000">
+                                <div class="about-icon">
+                                    <i class="flaticon-wrench"></i>
+                                    <!-- <div class="favorite-shape">
+                                        <img
+                                            src="/users/assets/images/about/about-two-shape-3.png"
+                                            alt="images">
+                                    </div> -->
                                 </div>
-                                <!-- Agency Support Logo End -->
-                                @endforeach
-                                
-                              
-                            
+                                <h3 style="color:black">
+                                    Quality
+                                            Works
+                                </h3>
+                                <!-- <div class="about-style-two-shape">
+                                    <img
+                                        src="/users/assets/images/about/about-two-shape-4.png"
+                                        alt="images">
+                                </div> -->
                             </div>
+                            <a
+                                href="about-style-two.html"
+                                class="default-btn btn-style-three"
+                                data-cue="slideInUp"
+                                data-duration="1500"
+                            >
+                                Learn
+                                        More
+                            </a>
                         </div>
                     </div>
-                    <!-- Agency Support Slider End -->
                 </div>
             </div>
+            <div class="about-style-two-shape-1">
+                <img src="/users/assets/images/about/about-two-shape-2.png" alt="images">
+            </div>
         </div>
-    </div>
-    <!-- Our Testimonial Section End -->
+        <!-- End About Style One Area -->
+        <!-- Start Our Features Two Area -->
+        <div class="features-area pb-70">
+            <br>
+            <style></style>
+            <div class="container">
+                <div class="section-title">
+                    <span class="top-title top-title-two">Our Features</span>
+                    <h2>Why Choose Us</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6" data-cue="zoomIn" data-duration="1500">
+                        <div style="border: 3px dotted  #bd9e30;border-radius: 15px;" class="single-features-content single-features-content-two">
+                            <div class="features-two-img">
+                                <h3 style="color:black">01</h3>
+                            </div>
+                            <p style="color:black">
+                                We strive on internal standards & professional
+                                protocols to roll out services
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-cue="zoomIn" data-duration="1500">
+                        <div style="border: 3px dotted  #bd9e30;border-radius: 15px;" class="single-features-content single-features-content-two">
+                            <div class="features-two-img">
+                                <h3 style="color:black">02</h3>
+                            </div>
+                            <p style="color:black">
+                                Commitment to quality and safety
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-cue="zoomIn" data-duration="1500">
+                        <div style="border: 3px dotted  #bd9e30;border-radius: 15px;" class="single-features-content single-features-content-two">
+                            <div class="features-two-img">
+                                <h3 style="color:black">03</h3>
+                            </div>
+                            <p style="color:black">
+                                Flexible quote | instant service
+                                delivery | Comprehensive reports for peace of
+                                your mind
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-cue="zoomIn" data-duration="1500">
+                        <div style="border: 3px dotted  #bd9e30;border-radius: 15px;" class="single-features-content single-features-content-two">
+                            <div class="features-two-img">
+                                <h3 style="color:black">04
+                                    <h3>
+                                    </div>
+                                    <p style="color:black">
+                                        Convenience to set your own schedules
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="features-two-shape">
+                <img src="/users/assets/images/banner/banner-two-shape-7.png"
+                    alt="images">
+            </div> -->
+                </div>
+                <!-- End Our Features Two Area -->
+                <div class="blog-area pt-100 pb-100">
+                    <div class="container">
+                        <div class="section-title">
+                            <span class="top-title top-title-two">
+                                Our
+                                Blog
+                            </span>
+                            <h2>Latest Blogs</h2>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            @foreach ($blogs as $item)
+                                 <div class="col-lg-4 col-md-6" data-cue="fadeIn" data-duration="1000">
+                                <div class="single-blog-card single-blog-two-content">
+                                    <div class="blog-img blog-img-two">
+                                        <a href="/singleblog/{{$item->id}}">
+                                            <img src="/uploads/blogs/{{$item->image}}" alt="images">
+                                        </a>
+                                    </div>
+                                    <div class="blog-two-list-item">
+                                        <ul>
+                                            <li>
+                                                <i class="flaticon-calendar"></i>
+                                               {{$item->date}}
+                                            </li>
+                                        </ul>
+                                        <a href="/singleblog/{{$item->id}}">
+                                            <h3 style="color:black">
+                                              {{$item->title}}
+                                            </h3>
+                                        </a>
+                                        <a href="/singleblog/{{$item->id}}" class="learn-more">
+                                            Learn More
+                                            <i class="flaticon-next"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                           
+                           
+                        </div>
+                        <!-- <div class="services-contact">
+                    <p>Contact Us For Any Kind Of Handyman Repair Services. <a href="blog-details.html">Let’s Get Started.</a></p>
+                </div> -->
+                    </div>
+                </div>
+            
+                <!-- Start How We Work Area -->
+                <div class="how-works-area pt-100 pb-70">
+                    <div class="container">
+                        <div class="section-title">
+                            <span class="top-title top-title-three">
+                                <i class="flaticon-flash"></i>
+                                HOW WE WORK
+                            </span>
+                            <h2>Our Working Process</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-sm-6 col-sm-4" data-cue="zoomIn" data-duration="1000">
+                                <div class="how-work-content">
+                                    <div class="works-icon">
+                                        <i class="flaticon-guru"></i>
+                                    </div>
+                                    <h3 style="color:black">
+                                        <b>01.</b>
+                                        Consult Our
+                                        Expert
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-sm-4" data-cue="zoomIn" data-duration="1500">
+                                <div class="how-work-content">
+                                    <div class="works-icon">
+                                        <i class="flaticon-planning"></i>
+                                    </div>
+                                    <h3 style="color:black">
+                                        <b>02.</b>
+                                        Choose Your
+                                        Plan
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-sm-4" data-cue="zoomIn" data-duration="2000">
+                                <div class="how-work-content">
+                                    <div class="works-icon">
+                                        <i class="flaticon-click"></i>
+                                    </div>
+                                    <h3 style="color:black">
+                                        <b>03.</b>
+                                        Finalise Your
+                                        Plan
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-work-shape-1">
+                        <img src="/users/assets/images/how-works-shape-2.png" alt="images">
+                    </div>
+                    <div class="how-work-shape-2">
+                        <img src="/users/assets/images/how-works-shape-3.png" alt="images">
+                    </div>
+                    <div class="how-work-shape-3">
+                        <img src="/users/assets/images/how-works-shape-1.png" alt="images">
+                    </div>
+                </div>
+                <!-- End How We Work Area -->
+                <!-- Start Our Testimonial Area -->
+                <div class="testimonials-area pt-100 pb-70">
+                    <div class="container">
+                        <div class="section-title section-title-left">
+                            <span class="top-title">Our Testimonial</span>
+                            <h2>What People Are Saying!</h2>
+                        </div>
+                        <div class="testimonials-slider owl-carousel owl-theme">
+                            @foreach ($says as $item)
+                                 <div class="single-testimonials-card">
+                                <i class="flaticon-quote"></i>
+                                <p style="color:black;">
+                                    {{$item->words}}
+                                </p>
+                                <div class="testimonials-text">
+                                     <a href="testimonials.html">
+                                        <img style="height: 100px" src="/uploads/clientsays/{{$item->image}}" alt="images">
+                                    </a> 
+                                    <div class="testimonials-bg-content">
+                                        <a href="testimonials.html">
+                                            <h3 style="color:black;">
+                                                {{$item->name}}
+                                            </h3>
+                                        </a>
+                                       <p style="color:black;">
+                                            {{$item->designation}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- End Our Testimonial Area -->
+                <!-- start Partner Area -->
+                <div class="partner-logo-area pb-100">
+                    <div class="container">
+                        <div class="partner-logo-slider owl-carousel owl-theme">
+
+                            @foreach ($teams as $item)
+                                 <div class="partner-logo-img">
+                                <img src="/uploads/team/{{$item->image}}" alt="images">
+                                <div class="partner-logo-two">
+                                    <img src="/uploads/team/{{$item->image}}" alt="images">
+                                </div>
+                            </div>
+                         
+                            @endforeach
+                           
+                         
+                         
+                        </div>
+                    </div>
+                </div>
+                <!-- End Partner Area -->
+                <!-- End Our Partner Two Area -->
+              
 @endsection

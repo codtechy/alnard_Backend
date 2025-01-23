@@ -32,7 +32,14 @@ class userController extends Controller
         ->orderBy('id', 'desc')
         ->latest()
         ->take(4)
+        ->get();
+
+        $blogs = DB::table('blogs')
+        ->orderBy('id', 'desc')
+        ->latest()
+        ->take(3)
         ->get();    
+
 
         $videos = DB::table('videos')
         ->orderBy('id', 'desc')
@@ -51,7 +58,7 @@ class userController extends Controller
 
 
 
-        return view('users.index', compact('products', 'banners', 'videos', 'says', 'teams'));
+        return view('users.index', compact('products', 'banners', 'videos', 'says', 'teams', 'blogs'));
     }
 
 
@@ -232,6 +239,7 @@ class userController extends Controller
     public function singleblog($id)
     {
 
+        
 
         $blog = Blog::find($id);
         $id = $blog->id;
@@ -243,7 +251,7 @@ class userController extends Controller
 
 
 
-        return view('users.singleblog', compact('blogs'));
+        return view('users.blogDetails', compact('blogs'));
     }
 
 

@@ -40,8 +40,8 @@ class blogController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|max:25',
-            'title' => 'required|max:25',
+            'name' => 'required|max:250',
+            'title' => 'required|max:250',
             'date'=>'required',
             'words' => 'required',
             'file' => 'required',
@@ -109,8 +109,8 @@ class blogController extends Controller
     public function update(Request $request, $id)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|max:25',
-            'title' => 'required|max:25',
+            'name' => 'required|max:250',
+            'title' => 'required|max:250',
             'date' => 'required',
             'words' => 'required',
 
