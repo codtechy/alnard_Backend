@@ -8,13 +8,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Properties
+        Blogs
         {{-- <small>advanced tables</small> --}}
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Data</a></li>
-        <li class="active">Properties</li>
+        <li class="active">Blogs</li>
       </ol>
     </section>
 
