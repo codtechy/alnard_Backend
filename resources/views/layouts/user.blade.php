@@ -325,6 +325,12 @@
                                                         GENERAL MAINTENANCE
                                                     </a>
                                                 </li>
+                                                  <li>
+                                                    <a href="#">
+                                                        <i class="bx bx-arrow-back"></i>
+                                                        WATER PROOFING
+                                                    </a>
+                                                </li>
                                                 <li>
                                                     <a href="#">
                                                         <i class="bx bx-arrow-back"></i>
